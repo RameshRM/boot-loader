@@ -17,7 +17,7 @@ describe(__filename + 'start server', function () {
         name: 'John Doe'
       });
     });
-    
+
     setTimeout(function () {
       done();
     }, 200); //Kraken has a delay
@@ -29,8 +29,7 @@ describe(__filename + 'start server', function () {
       .get('/user')
       .end(function (err, res) {
         assert.ok(!err);
-        console.log(res.text);
-        // assert.ok(res.body.name === 'John Doe');
+        assert.ok(res.body.name === 'John Doe');
         done();
       });
   });
