@@ -1,0 +1,41 @@
+{
+  "name": "boot-loader",
+  "version": "0.1.0",
+  "description": "A simple light weight framework abstraction for KrakenJs & ExpressJs",
+  "main": "./index.js",
+  "scripts": {
+    "test": "node_modules/.bin/jshint --config .jshintrc ./ && node_modules/.bin/mocha test/*.js --reporter spec --timeout 20s && ./node_modules/.bin/istanbul cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RameshRM/boot-loader.git"
+  },
+  "keywords": [
+    "A",
+    "simple",
+    "light",
+    "weight",
+    "framework",
+    "abstraction",
+    "for",
+    "KrakenJs",
+    "&",
+    "ExpressJs"
+  ],
+  "author": "RameshRM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RameshRM/boot-loader/issues"
+  },
+  "homepage": "https://github.com/RameshRM/boot-loader#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "kraken-js": "^2.1.0",
+    "supertest": "^1.2.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "jshint": "^2.9.1",
+    "mocha": "^2.4.5"
+  }
+}
